@@ -35,9 +35,23 @@ Using a spritemap is a technique that allows you not to load a bunch of icons as
 
 If you have an application with a bunch of reusable icons, then this option is for you.
 
-## Usage
+---
+
+## Installation
+
+```bash
+npm i nuxt-svg-spritemap
+```
+
+or
+
+```bash
+yarn add nuxt-svg-spritemap
+```
 
 ---
+
+## Configuration
 
 _nuxt.config.js_
 
@@ -107,3 +121,27 @@ When viewing the examples in the `/docs/examples/README.md` folder, remember tha
 ---
 
 > NOTE: currently this plugin does not support svg directory tracking. This means that you need to rebuild on changes to the svg directory or files in order to rebuild the spritemap.
+
+---
+
+## Usage
+
+```
+/ <app-root>
+├── ...
+├── assets
+│   └── svg/
+│       ├── menu/
+│       │   └── unread.svg
+│       └── logo.svg
+└── ...
+```
+
+_app.vue_
+
+```html
+<template>
+  <SVGSprite name="logo" />
+  <SVGSprite name="menu-unread" />
+</template>
+```
