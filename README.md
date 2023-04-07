@@ -74,7 +74,7 @@ interface Options {
 
   transform: function:string | null;
   // You can transform your svg spritemap before inserting
-  // See more in Examples
+  // See more in docs/examples/README.md
 
   outputFilename: string;
   // Filename for spritemap
