@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-svg-spritemap",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./lib/vitePlugin.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^21.1.1"
+  },
+  "exports": {
+    ".": "./lib/vitePlugin.js",
+    "./component": "./lib/SpriteComponent.js",
+    "./plugin": "./lib/plugin.js",
+    "./vitePlugin": "./lib/vitePlugin.js"
+  },
+  "peerDependencies": {
+    "vue": "3.*"
+  }
+}
