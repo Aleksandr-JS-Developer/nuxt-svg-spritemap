@@ -149,7 +149,7 @@ _/\<app-root>/app.vue_
 </template>
 
 <script setup>
-  import SVGSpritemap from '/spritemap.svg'; // use path from your nuxtSvgSpritemapConfig.outputFilename
+  import SVGSpritemap from '/spritemap.svg?raw'; // use path from your nuxtSvgSpritemapConfig.outputFilename
 </script>
 ```
 
