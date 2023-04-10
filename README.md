@@ -145,7 +145,7 @@ _/\<app-root>/app.vue_
 ```html
 <template>
   <NuxtPage />
-  <SVGSpritemap />
+  <div style="display: none" v-html="SVGSpritemap"></div>
 </template>
 
 <script setup>
