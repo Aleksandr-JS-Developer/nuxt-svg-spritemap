@@ -67,6 +67,7 @@ export default defineNuxtConfig({
   appConfig: {
     nuxtSvgSpritemapConfig,
   },
+  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
@@ -86,7 +87,7 @@ interface Options {
   dirSeparator: string;
   // by default: '-'
 
-  transform: function:string | null;
+  transform: function(spritemap:string):string | null;
   // You can transform your svg spritemap before inserting
   // See more in docs/examples/README.md
 
@@ -99,6 +100,10 @@ interface Options {
   spriteComponentName: string;
   // Sprite vue component name
   // by default: 'SVGSprite'
+
+  spritemapComponentName: string
+  // The component that loads the spritemap
+  // by default: 'SVGSpritemap'
 }
 ```
 
@@ -134,10 +139,21 @@ When viewing the examples in the `/docs/examples/README.md` folder, remember tha
 │       ├── menu/
 │       │   └── unread.svg
 │       └── logo.svg
+├── pages/
+|   └── index.vue
 └── ...
 ```
 
-_app.vue_
+_/\<app-root>/app.vue_
+
+```html
+<template>
+  <NuxtPage />
+  <SVGSpritemap />
+</template>
+```
+
+_/\<app-root>/pages/index.vue_
 
 ```html
 <template>
