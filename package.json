@@ -4,6 +4,12 @@
   "description": "",
   "main": "./lib/vitePlugin.js",
   "scripts": {},
+  "keywords": [
+    "spritemap",
+    "svg-spritemap",
+    "nuxt-svg-spritemap"
+  ],
+  "homepage": "https://github.com/Aleksandr-JS-Developer/nuxt-svg-spritemap",
   "author": "",
   "license": "ISC",
   "dependencies": {
