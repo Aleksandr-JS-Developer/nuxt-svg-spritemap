@@ -100,10 +100,6 @@ interface Options {
   spriteComponentName: string;
   // Sprite vue component name
   // by default: 'SVGSprite'
-
-  spritemapComponentName: string
-  // The component that loads the spritemap
-  // by default: 'SVGSpritemap'
 }
 ```
 
@@ -151,6 +147,10 @@ _/\<app-root>/app.vue_
   <NuxtPage />
   <SVGSpritemap />
 </template>
+
+<script setup>
+  import SVGSpritemap from '/spritemap.svg'; // use path from your nuxtSvgSpritemapConfig.outputFilename
+</script>
 ```
 
 _/\<app-root>/pages/index.vue_
