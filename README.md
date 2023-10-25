@@ -10,11 +10,21 @@ Using a spritemap is a technique that allows you not to load a bunch of icons as
 <svg>
   <use xlink:href="#item1"></use>
 </svg>
+
 <svg>
-  <use xlink:href="#item2"></use>
+  <use xlink:href="#item1"></use>
 </svg>
+
 <svg>
-  <use xlink:href="#item3"></use>
+  <use xlink:href="#item1"></use>
+</svg>
+
+<svg>
+  <use xlink:href="#item1"></use>
+</svg>
+
+<svg>
+  <use xlink:href="#item1"></use>
 </svg>
 
 <svg
@@ -22,12 +32,6 @@ Using a spritemap is a technique that allows you not to load a bunch of icons as
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
   <symbol id="item1">
-    <path>...</path>
-  </symbol>
-  <symbol id="item2">
-    <path>...</path>
-  </symbol>
-  <symbol id="item3">
     <path>...</path>
   </symbol>
 </svg>
@@ -75,7 +79,7 @@ export default defineNuxtConfig({
 
 ```typescript
 interface Options {
-  path2svg: string;
+  path2svg: string | string[];
   // path to svg folder.
   // by default: 'assets/svg/'
 

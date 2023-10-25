@@ -103,3 +103,13 @@ export default defineNuxtConfig({
 ```
 
 This code will replace all occurrences of `%cta-color%` with `#f00`, which can be very useful when creating universal icons with variable colors.
+
+# Multi entry points
+
+```javascript
+const PATH_TO_DYNAMIC_ASSETS = process.env.ASSETS;
+
+const nuxtSvgSpritemapConfig = {
+  assets: ['assets/svg/', PATH_TO_DYNAMIC_ASSETS],
+};
+```
