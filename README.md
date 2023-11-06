@@ -71,7 +71,6 @@ export default defineNuxtConfig({
   appConfig: {
     nuxtSvgSpritemapConfig,
   },
-  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
@@ -125,7 +124,8 @@ When viewing the examples in the `/docs/examples/README.md` folder, remember tha
 
 ---
 
-> NOTE: currently this plugin does not support svg directory tracking. This means that you need to rebuild on changes to the svg directory or files in order to rebuild the spritemap.
+> NOTE: currently this plugin does not support svg directory tracking.
+> This means that you need to rebuild on changes to the svg directory or files in order to rebuild the spritemap.
 
 ---
 
@@ -142,19 +142,6 @@ When viewing the examples in the `/docs/examples/README.md` folder, remember tha
 ├── pages/
 |   └── index.vue
 └── ...
-```
-
-_/\<app-root>/app.vue_
-
-```html
-<template>
-  <NuxtPage />
-  <div style="display: none" v-html="SVGSpritemap"></div>
-</template>
-
-<script setup>
-  import SVGSpritemap from '/spritemap.svg?raw'; // use path from your nuxtSvgSpritemapConfig.outputFilename
-</script>
 ```
 
 _/\<app-root>/pages/index.vue_

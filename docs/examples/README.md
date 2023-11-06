@@ -9,7 +9,6 @@ export default defineNuxtConfig({
   vite: {
     plugins: [nuxtSvgSpritemap()],
   },
-  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
@@ -31,7 +30,6 @@ export default defineNuxtConfig({
   appConfig: {
     nuxtSvgSpritemapConfig,
   },
-  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
@@ -55,7 +53,6 @@ export default defineNuxtConfig({
   appConfig: {
     nuxtSvgSpritemapConfig,
   },
-  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
@@ -98,7 +95,6 @@ export default defineNuxtConfig({
   appConfig: {
     nuxtSvgSpritemapConfig,
   },
-  buildModules: ['@nuxtjs/svg'],
 });
 ```
 
