@@ -1,6 +1,6 @@
 {
   "name": "nuxt-svg-spritemap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "SVG spritemap builder for Nuxt 3 applications",
   "main": "./lib/vitePlugin.js",
